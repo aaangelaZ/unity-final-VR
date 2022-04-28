@@ -9,6 +9,7 @@ public class ButtonVR : MonoBehaviour
     public GameObject button;
     public UnityEvent onPress;
     public UnityEvent onRelease;
+    public GameObject fuluPrefab;
     GameObject presser;
     AudioSource sound;
     bool isPressed;
@@ -43,12 +44,26 @@ public class ButtonVR : MonoBehaviour
         }
     }
 
+
+    public IEnumerator papershow()
+    {
+        yield return new WaitForSeconds(1);
+
+        for (int i=0; i<20; i++ )
+        {
+            Vector3 pos = new Vector3 (Random.Range(3f,5f),Random.Range(1f,3f), Random.Range(6f,8f));
+            Instantiate(fuluPrefab, pos, Quaternion.identity);
+            yield return new WaitForSeconds(0.5f);
+        }
+    }
+
     public void SpawnSphere()
     {
-        GameObject sphere = GameObject.CreatePrimitive(PrimitiveType.Sphere);
-        sphere.transform.localScale = new Vector3(1.5f,1.5f,1.5f);
-        sphere.transform.localPosition = new Vector3(1,0.5f,7);
-        sphere.AddComponent<Rigidbody>();
+        // GameObject sphere = GameObject.CreatePrimitive(PrimitiveType.Sphere);
+        // sphere.transform.localScale = new Vector3(1.5f,1.5f,1.5f);
+        // sphere.transform.localPosition = new Vector3(3,0.5f,7);
+        // sphere.AddComponent<Rigidbody>();
+
     }
 
 }
