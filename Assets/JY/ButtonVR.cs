@@ -45,7 +45,7 @@ public class ButtonVR : MonoBehaviour
     }
 
 
-    public IEnumerator papershow()
+    IEnumerator papershow()
     {
         yield return new WaitForSeconds(1);
 
@@ -59,6 +59,7 @@ public class ButtonVR : MonoBehaviour
 
     public void SpawnSphere()
     {
+            StartCoroutine(papershow());
 
         // GameObject sphere = GameObject.CreatePrimitive(PrimitiveType.Sphere);
         // sphere.transform.localScale = new Vector3(1.5f,1.5f,1.5f);
