@@ -1684,7 +1684,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  fuluPrefab: {fileID: 0}
+  fuluPrefab: {fileID: 435538324185481072, guid: f1b719c3fb314b4459e0f7f8d61e3671, type: 3}
 --- !u!82 &688815053
 AudioSource:
   m_ObjectHideFlags: 0

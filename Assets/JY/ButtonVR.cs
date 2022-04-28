@@ -59,6 +59,7 @@ public class ButtonVR : MonoBehaviour
 
     public void SpawnSphere()
     {
+
         // GameObject sphere = GameObject.CreatePrimitive(PrimitiveType.Sphere);
         // sphere.transform.localScale = new Vector3(1.5f,1.5f,1.5f);
         // sphere.transform.localPosition = new Vector3(3,0.5f,7);
