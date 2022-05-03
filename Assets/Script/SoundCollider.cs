@@ -25,6 +25,6 @@ public class SoundCollider : MonoBehaviour
             Debug.Log("Player entered");
             _audioSource.PlayOneShot(windSound);
 
-                }
+        }
     }
 }

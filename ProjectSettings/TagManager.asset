@@ -6,6 +6,7 @@ TagManager:
   tags:
   - FULU
   - fire
+  - winCollider
   layers:
   - Default
   - TransparentFX
