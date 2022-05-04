@@ -4,16 +4,22 @@ using UnityEngine;
 
 public class MirrorController: MonoBehaviour
 {
-    public GameObject vampire;
+
     AudioSource _audioSource;
-    public AudioClip glassBreak;
-    public GameObject mirror;
+
+    public AudioClip ghostTalk;
+ 
+    public GameObject tipText;
+
+    public GameObject closerCollider;
 
     void Start()
     {
-        vampire.SetActive(false);
+
         _audioSource = GetComponent<AudioSource>();
-        //mirror.SetActive(true);
+     
+        tipText.SetActive(false);
+        closerCollider.SetActive(false);
     }
 
   
@@ -26,10 +32,11 @@ public class MirrorController: MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            vampire.SetActive(true);
-            _audioSource.PlayOneShot(glassBreak);
-            //mirror.SetActive(false);
-            Destroy(mirror, 3);
+            tipText.SetActive(true);
+            closerCollider.SetActive(true);
+
+            _audioSource.PlayOneShot(ghostTalk);
+        
         }
     }
 }
