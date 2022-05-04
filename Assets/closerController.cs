@@ -14,6 +14,8 @@ public class closerController : MonoBehaviour
     public GameObject mirror;
 
     public GameObject clue;
+
+    public GameObject mirrorCollider;
     
 
     void Start()
@@ -45,6 +47,8 @@ public class closerController : MonoBehaviour
             clue.SetActive(true);
 
             Destroy(vampire, 8f);
+
+            Destroy(mirrorCollider);
         }
     }
 }
