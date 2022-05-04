@@ -159,12 +159,17 @@ public class OVRPlayerController : MonoBehaviour
 	private bool ReadyToSnapTurn; // Set to true when a snap turn has occurred, code requires one frame of centered thumbstick to enable another snap turn.
 	private bool playerControllerEnabled = false;
 
+	AudioSource _audioSource;
+	public AudioClip floorCreak;
+
 	void Start()
 	{
 		// Add eye-depth as a camera offset from the player controller
 		var p = CameraRig.transform.localPosition;
 		p.z = OVRManager.profile.eyeDepth;
 		CameraRig.transform.localPosition = p;
+
+		_audioSource = GetComponent<AudioSource>();
 	}
 
 	void Awake()
@@ -346,12 +351,15 @@ public class OVRPlayerController : MonoBehaviour
 				moveForward = true;
 				dpad_move = true;
 
+				_audioSource.PlayOneShot(floorCreak);
 			}
 
 			if (OVRInput.Get(OVRInput.Button.DpadDown))
 			{
 				moveBack = true;
 				dpad_move = true;
+
+				_audioSource.PlayOneShot(floorCreak);
 			}
 
 			MoveScale = 1.0f;
@@ -359,6 +367,7 @@ public class OVRPlayerController : MonoBehaviour
 			if ((moveForward && moveLeft) || (moveForward && moveRight) ||
 				(moveBack && moveLeft) || (moveBack && moveRight))
 				MoveScale = 0.70710678f;
+			
 
 			// No positional movement if we are in the air
 			if (!Controller.isGrounded)
