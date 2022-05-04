@@ -7,6 +7,7 @@ public class LanternOn : MonoBehaviour
     public GameObject LanLight1;
     public GameObject LanLight2;
     public GameObject Lanlight3;
+    public GameObject Lanlight4;
 
     void OnTriggerEnter(Collider other)
     {
@@ -15,6 +16,7 @@ public class LanternOn : MonoBehaviour
             LanLight1.SetActive(true);
             LanLight2.SetActive(true);
             Lanlight3.SetActive(true);
+            Lanlight4.SetActive(true);
         }
     }
 }
