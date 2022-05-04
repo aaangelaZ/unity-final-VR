@@ -33,14 +33,16 @@ public class Ending1 : MonoBehaviour
         {
             windowEscape.SetActive(true);
 
-            if (OVRInput.Get(OVRInput.Button.Two))
-            {
+            
+        }
+        
+        if (OVRInput.Get(OVRInput.Button.Two))
+        {
                 windowGhost1.SetActive(true);
                 windowGhost2.SetActive(true);
                 windowGhost3.SetActive(true);
                 _audioSource.PlayOneShot(thunderSound);
                 StartCoroutine(NextLevelAfterWait());
-            }     
-        }       
+         }            
     }
 }
