@@ -14,7 +14,7 @@ public class closerController : MonoBehaviour
     public GameObject mirror;
 
     public GameObject clue;
-
+    public GameObject spotLight;
     public GameObject mirrorCollider;
     
 
@@ -23,7 +23,8 @@ public class closerController : MonoBehaviour
         vampire.SetActive(false);
         _audioSource = GetComponent<AudioSource>();
         clue.SetActive(false);
-    }
+        spotLight.SetActive(false);
+}
 
 
     void Update()
@@ -42,13 +43,16 @@ public class closerController : MonoBehaviour
             _audioSource.PlayOneShot(scaryLaugh);
 
             closerText.SetActive(false);
-     
+            spotLight.SetActive(true);
+
             Destroy(mirror);
             clue.SetActive(true);
 
             Destroy(vampire, 8f);
 
             Destroy(mirrorCollider);
+
+            Destroy(spotLight,3f);
         }
     }
 }
