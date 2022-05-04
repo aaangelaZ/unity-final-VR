@@ -4,18 +4,21 @@ using UnityEngine;
 
 public class CandleOnOff : MonoBehaviour
 {
+    AudioSource _audioSource;
     public bool onSwitch;
     public bool lightStatus;
     public GameObject theLight;
     public GameObject theFlame;
     public GameObject uiCandle;
-    public AudioSource myFx;
+
     public AudioClip matchStrike;
     public AudioClip candlePutout;
 
+    public GameObject particles;
+
     void Start()
     {
-        //theLight.SetActive(false);
+        _audioSource = GetComponent<AudioSource>();
     }
 
     void OnTriggerEnter(Collider other)
@@ -64,7 +67,8 @@ public class CandleOnOff : MonoBehaviour
                 {
                     theFlame.SetActive(true);
                     theLight.SetActive(true);
-                    myFx.PlayOneShot(matchStrike);
+                    _audioSource.PlayOneShot(matchStrike);
+                    particles.SetActive(false);
                 } 
             }
             
@@ -76,8 +80,8 @@ public class CandleOnOff : MonoBehaviour
                    {
                     theFlame.SetActive(false);
                     theLight.SetActive(false);
-                    myFx.PlayOneShot(candlePutout);
-                   }
+                    _audioSource.PlayOneShot(candlePutout);
+                    }
                 }
             }
         }
