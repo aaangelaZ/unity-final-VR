@@ -28,6 +28,8 @@ public class MarriageDialogue : MonoBehaviour
         {
             textBox.SetActive(true);
             _audioSource.PlayOneShot(dialogueSound);
+
+            Destroy(textBox, 5f);
         }
     }
 }
