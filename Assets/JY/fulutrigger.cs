@@ -12,7 +12,7 @@ public class fulutrigger : MonoBehaviour
 
     for (int i=0; i<20; i++ )
     {
-        Vector3 pos = new Vector3 (Random.Range(-4.87f,-3.8f),Random.Range(1.22f,1.42f), Random.Range(10.64f,10.77f));
+        Vector3 pos = new Vector3 (Random.Range(-4.85f,-3.78f),Random.Range(1.22f,1.42f), Random.Range(10.64f,10.77f));
         Instantiate(fuluPrefab, pos, Quaternion.identity);
         yield return new WaitForSeconds(0.1f);
     }
