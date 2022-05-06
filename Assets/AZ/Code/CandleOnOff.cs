@@ -76,7 +76,7 @@ public class CandleOnOff : MonoBehaviour
             {
                 if (lightStatus)
                 {
-                   if (OVRInput.Get(OVRInput.Button.One))
+                   if (OVRInput.GetDown(OVRInput.Button.One))
                    {
                     theFlame.SetActive(false);
                     theLight.SetActive(false);

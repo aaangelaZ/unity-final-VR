@@ -6,9 +6,7 @@ using UnityEngine.SceneManagement;
 public class Ending1 : MonoBehaviour
 {
     public GameObject windowEscape;
-    public GameObject windowGhost1;
-    public GameObject windowGhost2;
-    public GameObject windowGhost3;
+    public GameObject Kirby;
 
     AudioSource _audioSource;
     public AudioClip thunderSound;
@@ -16,9 +14,7 @@ public class Ending1 : MonoBehaviour
     void Start()
     {
         _audioSource = GetComponent<AudioSource>();
-        windowGhost1.SetActive(false);
-        windowGhost2.SetActive(false);
-        windowGhost3.SetActive(false);
+        Kirby.SetActive(false);
         windowEscape.SetActive(false);
 
         //StartCoroutine(NextLevelAfterWait());
@@ -38,9 +34,7 @@ public class Ending1 : MonoBehaviour
 
             if (OVRInput.Get(OVRInput.Button.Two))
             {
-                windowGhost1.SetActive(true);
-                windowGhost2.SetActive(true);
-                windowGhost3.SetActive(true);
+                Kirby.SetActive(true);
                 _audioSource.PlayOneShot(thunderSound);
                 //StartCoroutine(NextLevelAfterWait());
             }
