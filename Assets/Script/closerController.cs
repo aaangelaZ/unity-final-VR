@@ -52,7 +52,7 @@ public class closerController : MonoBehaviour
             Destroy(mirror);
             clue.SetActive(true);
 
-            Destroy(vampire, 8f);
+            Destroy(vampire, 12f);
 
             Destroy(mirrorCollider);
 
