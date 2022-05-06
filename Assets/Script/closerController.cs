@@ -13,9 +13,12 @@ public class closerController : MonoBehaviour
     public GameObject closerText;
     public GameObject mirror;
 
+
     public GameObject clue;
     public GameObject spotLight;
     public GameObject mirrorCollider;
+
+    public GameObject screen;
     
 
     void Start()
@@ -24,6 +27,7 @@ public class closerController : MonoBehaviour
         _audioSource = GetComponent<AudioSource>();
         clue.SetActive(false);
         spotLight.SetActive(false);
+        screen.SetActive(true);
 }
 
 
@@ -53,6 +57,8 @@ public class closerController : MonoBehaviour
             Destroy(mirrorCollider);
 
             Destroy(spotLight,3f);
+
+            screen.SetActive(false);
         }
     }
 }
