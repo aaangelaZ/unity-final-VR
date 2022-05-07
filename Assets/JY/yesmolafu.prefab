@@ -101,6 +101,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 100eaed5bd396fd4baf1d6edfe9d1273, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  burnSound: {fileID: 8300000, guid: 609f5fe567486d240b963d783ea5c7ea, type: 3}
 --- !u!54 &4881355355833081267
 Rigidbody:
   m_ObjectHideFlags: 0
