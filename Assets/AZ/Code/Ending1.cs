@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class Ending1 : MonoBehaviour
 {
-    public GameObject windowEscape;
+    public GameObject windowEscape; //textUI
     public GameObject Kirby;
 
     AudioSource _audioSource;

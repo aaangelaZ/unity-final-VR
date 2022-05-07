@@ -33,6 +33,7 @@ public class LanternOn : MonoBehaviour
             _audioSource.PlayOneShot(brideTalk);
             brideText.SetActive(true);
             Destroy(brideText, 5f);
+            Destroy(brideTalk, 5f);
         }
     }
 }
