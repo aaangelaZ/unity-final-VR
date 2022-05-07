@@ -6,10 +6,12 @@ public class SoundCollider : MonoBehaviour
 {
     AudioSource _audioSource;
     public AudioClip windSound;
+    public GameObject windOStext;
 
     void Start()
     {
         _audioSource = GetComponent<AudioSource>();
+        windOStext.SetActive(false);
     }
 
  
@@ -24,6 +26,9 @@ public class SoundCollider : MonoBehaviour
         {
             Debug.Log("Player entered");
             _audioSource.PlayOneShot(windSound);
+            windOStext.SetActive(true);
+
+            Destroy(windOStext, 5f);
 
         }
     }
