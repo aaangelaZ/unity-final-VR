@@ -5,20 +5,25 @@ using UnityEngine;
 public class cupboardaudio : MonoBehaviour
 {
 
-    [SerializeField] private AudioSource cupboard;
+    //[SerializeField] private AudioSource cupboard;
+    public AudioClip handlerSound;
+    AudioSource _audioSource;
+
 
     public GameObject spotLight;
 
     private void Start()
     {
         spotLight.SetActive(false);
+        _audioSource = GetComponent<AudioSource>();
     }
 
     private void OnTriggerEnter(Collider other) 
     {
         if (other.CompareTag("Player"))
         {
-            cupboard.Play();
+            //cupboard.Play();
+            _audioSource.PlayOneShot(handlerSound);
             spotLight.SetActive(true);
         }
         
