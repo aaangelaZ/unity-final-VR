@@ -68,7 +68,7 @@ public class CandleOnOff : MonoBehaviour
                     theFlame.SetActive(true);
                     theLight.SetActive(true);
                     _audioSource.PlayOneShot(matchStrike);
-                    particles.SetActive(false);
+                    Destroy(GameObject.FindWithTag("particles"));
                 } 
             }
             

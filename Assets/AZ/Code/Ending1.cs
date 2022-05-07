@@ -28,7 +28,7 @@ public class Ending1 : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player"))
+        if (other.tag == "Player")
         {
             windowEscape.SetActive(true);
 
@@ -39,6 +39,9 @@ public class Ending1 : MonoBehaviour
                 //StartCoroutine(NextLevelAfterWait());
             }
         }
+        
+        
+        
         
         //if (OVRInput.Get(OVRInput.Button.Two))
         //{
