@@ -14,9 +14,9 @@ GameObject:
   - component: {fileID: 193552659805668253}
   - component: {fileID: 4881355355833081267}
   - component: {fileID: 1849137913594387937}
-  - component: {fileID: 1439858315958774859}
   - component: {fileID: 8513156218504035228}
   - component: {fileID: 740788071140323179}
+  - component: {fileID: 1041457976}
   m_Layer: 0
   m_Name: yesmolafu
   m_TagString: FULU
@@ -130,21 +130,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.39999995, y: 1.1999998, z: 0.08}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!65 &1439858315958774859
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8995989120459880219}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.39999995, y: 1.1999998, z: 0.08}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 0.49857154, y: 1.2855949, z: 0.11513474}
+  m_Center: {x: 0.0011814999, y: 0.0020675845, z: -0.0023385847}
 --- !u!114 &8513156218504035228
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -258,3 +245,16 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!65 &1041457976
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8995989120459880219}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.39999998, y: 1.1999999, z: 0.07999999}
+  m_Center: {x: 0, y: 0, z: 0}

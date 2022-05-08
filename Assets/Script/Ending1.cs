@@ -5,11 +5,15 @@ using UnityEngine.SceneManagement;
 
 public class Ending1 : MonoBehaviour
 {
-    public GameObject windowEscape; //textUI
+    public GameObject windowEscape; //textMP
     public GameObject Kirby;
 
     AudioSource _audioSource;
     public AudioClip thunderSound;
+
+    //set delay timer
+    [SerializeField] private float loadSceneDelay = 2f;
+    private float timeElapsed;
 
     void Start()
     {
@@ -31,11 +35,18 @@ public class Ending1 : MonoBehaviour
         if (other.tag == "Player")
         {
             windowEscape.SetActive(true);
+            timeElapsed += Time.deltaTime; //set timer
 
             if (OVRInput.Get(OVRInput.Button.Two))
             {
                 Kirby.SetActive(true);
                 _audioSource.PlayOneShot(thunderSound);
+
+                if (timeElapsed > loadSceneDelay)
+                {
+                    SceneManager.LoadScene("Ending1");
+                }
+                
                 //StartCoroutine(NextLevelAfterWait());
             }
         }
