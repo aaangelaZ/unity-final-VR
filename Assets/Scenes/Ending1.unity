@@ -646,7 +646,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 311704640}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 571a9369d29f0e84c95c59de43406c35, type: 3}
+  m_Script: {fileID: 11500000, guid: 32050cba7fd1a0c449ebcebe4560bfce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &563755601
@@ -1061,7 +1061,7 @@ GameObject:
   - component: {fileID: 1049447752}
   - component: {fileID: 1049447751}
   m_Layer: 5
-  m_Name: StartBtn
+  m_Name: restartBtn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1133,8 +1133,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 311704645}
-        m_TargetAssemblyTypeName: MenuController, Assembly-CSharp
-        m_MethodName: StartBtn
+        m_TargetAssemblyTypeName: RestartMenu, Assembly-CSharp
+        m_MethodName: restartBtn
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

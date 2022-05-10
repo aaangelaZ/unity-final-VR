@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 0.329
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.0047003306, g: 0.018817648, b: 0.03463532, a: 0.329}
+  m_IndirectSpecularColor: {r: 0.004740027, g: 0.019068722, b: 0.034823295, a: 0.329}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -28005,11 +28005,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 104c242a586934b46968e06b1bca5346, type: 3}
---- !u!1 &414427566 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 104c242a586934b46968e06b1bca5346, type: 3}
-  m_PrefabInstance: {fileID: 414427565}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &416969324
 GameObject:
   m_ObjectHideFlags: 0
@@ -38018,7 +38013,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!108 &930306094
 Light:
   m_ObjectHideFlags: 0
@@ -38371,6 +38366,11 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 4424706949013064, guid: eaa12a982860b1d42827d46ca83359d3, type: 3}
   m_PrefabInstance: {fileID: 967213422}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &968709404 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 7fdf684b4a85f564c9e0a0a98795d43f, type: 3}
+  m_PrefabInstance: {fileID: 1876510319}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &975709595 stripped
 GameObject:
@@ -44150,7 +44150,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1122889740
 Transform:
   m_ObjectHideFlags: 0
@@ -58001,7 +58001,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e00e3b9340619d4e92b0aa1c7a3989c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  windowGhost: {fileID: 414427566}
+  windowGhost: {fileID: 968709404}
   thunderSound: {fileID: 8300000, guid: 5fc56aa3fab17194c933eea3e4c29cb9, type: 3}
 --- !u!82 &1537849339
 AudioSource:
@@ -86115,7 +86115,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 8.18
+      value: 8.1
       objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 3}
       propertyPath: m_LocalPosition.y
@@ -86123,11 +86123,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 2.25
+      value: 9.99
       objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.7288634
+      value: -0.7006696
       objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 3}
       propertyPath: m_LocalRotation.x
@@ -86135,7 +86135,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.6846591
+      value: 0.71348584
       objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 3}
       propertyPath: m_LocalRotation.z
@@ -86147,7 +86147,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 86.418
+      value: 268.962
       objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
