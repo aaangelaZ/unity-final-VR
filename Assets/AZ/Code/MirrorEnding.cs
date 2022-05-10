@@ -22,12 +22,19 @@ public class MirrorEnding : MonoBehaviour
         
     }
 
+    private IEnumerator WaitForSceneLoad()
+    {
+        yield return new WaitForSeconds(3);
+        SceneManager.LoadScene("Ending1");
+    }
+
     void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
         {
             windowGhost.SetActive(true);
             _audioSource.PlayOneShot(thunderSound);
+            StartCoroutine(WaitForSceneLoad());
         }
     }
 }
