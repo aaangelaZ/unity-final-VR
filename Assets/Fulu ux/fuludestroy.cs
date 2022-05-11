@@ -7,7 +7,7 @@ public class fuludestroy : MonoBehaviour
     AudioSource _audioSource;
     public AudioClip burnSound;
 
-    public bool isFire;
+    //public bool isFire;
 
     private void Start()
     {
@@ -31,12 +31,12 @@ public class fuludestroy : MonoBehaviour
 
     }
 
-    private void Update()
-    {
-        if (isFire)
-        {
-            _audioSource.PlayOneShot(burnSound);
-        }
-    }
+    //private void Update()
+    //{
+    //    if (isFire)
+    //    {
+    //        _audioSource.PlayOneShot(burnSound);
+    //    }
+    //}
 
 }
