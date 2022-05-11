@@ -37634,9 +37634,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 80eb4d9e5541e4a2a8360f0ea2da5a02, type: 3}
+  m_audioClip: {fileID: 8300000, guid: e0ab4f6df0fa6124a9b6262acd015efd, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.87
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -43509,7 +43509,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e9f86c2ad09d4fe68403715eb511699, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  windSound: {fileID: 8300000, guid: 80eb4d9e5541e4a2a8360f0ea2da5a02, type: 3}
+  windSound: {fileID: 8300000, guid: e0ab4f6df0fa6124a9b6262acd015efd, type: 3}
   windOStext: {fileID: 1258647247}
 --- !u!82 &1023864928
 AudioSource:
