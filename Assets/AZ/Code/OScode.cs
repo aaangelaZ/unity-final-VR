@@ -18,7 +18,7 @@ public class OScode : MonoBehaviour
         {
             playerOsText.SetActive(true);
 
-            Destroy(playerOsText, 5f);
+            Destroy(playerOsText, 4f);
         }
 
     }

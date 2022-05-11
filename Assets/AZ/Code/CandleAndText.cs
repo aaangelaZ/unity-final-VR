@@ -16,12 +16,12 @@ public class CandleAndText : MonoBehaviour
 
     public GameObject particles;
 
-    public GameObject osText;
+    //public GameObject osText;
 
     void Start()
     {
         _audioSource = GetComponent<AudioSource>();
-        osText.SetActive(false);
+        //osText.SetActive(false);
     }
 
     void OnTriggerEnter(Collider other)
@@ -70,10 +70,10 @@ public class CandleAndText : MonoBehaviour
                 {
                     theFlame.SetActive(true);
                     theLight.SetActive(true);
-                    osText.SetActive(true);
+                    //osText.SetActive(true);
                     _audioSource.PlayOneShot(matchStrike);
                     Destroy(GameObject.FindWithTag("particles"));
-                    Destroy(osText, 5f);
+                    //Destroy(osText, 5f);
                 } 
             }
             

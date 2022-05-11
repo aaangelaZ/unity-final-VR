@@ -10,6 +10,8 @@ public class MarriageDialogue : MonoBehaviour
     public GameObject textBoxB;
 
     public bool dialogueOn;
+    //public bool choiceA;
+    //public bool choiceB;
 
     AudioSource _audioSource;
     public AudioClip dialogueSound;
@@ -37,43 +39,44 @@ public class MarriageDialogue : MonoBehaviour
     {
         if (dialogueOn)
         {
-            if (OVRInput.Get(OVRInput.Button.One)) //press A button
+            if (OVRInput.Get(OVRInput.Button.One)) //press A button - WHAT IS IT
             {
                 Destroy(textBox1);
                 textBoxA.SetActive(true);
                 _audioSource.PlayOneShot(dialogueSound);
 
-                if (OVRInput.Get(OVRInput.Button.One)) //press A button
+                if (OVRInput.Get(OVRInput.Button.Three)) //press X button
                 {
                     Destroy(textBoxA);
-                    textBoxB.SetActive(true);
+                    textBoxB.SetActive(true); //Who are you
                     _audioSource.PlayOneShot(dialogueSound);
                 }
 
-                else if (OVRInput.Get(OVRInput.Button.Two)) //press B button
+                else if (OVRInput.Get(OVRInput.Button.Two)) 
                 {
-                    Destroy(textBoxA);
+                    Destroy(textBoxA); //exit dialogue
                 }
             }
 
-            else if (OVRInput.Get(OVRInput.Button.Two)) //press B button
+            else if (OVRInput.Get(OVRInput.Button.Two)) //press B button - WHO ARE YOU
             {
                 Destroy(textBox1);
                 textBoxB.SetActive(true);
                 _audioSource.PlayOneShot(dialogueSound);
 
-                if (OVRInput.Get(OVRInput.Button.One)) //press A button
+                if (OVRInput.Get(OVRInput.Button.Four)) //press Y button
                 {
                     Destroy(textBoxB);
-                    textBoxA.SetActive(true);
+                    textBoxA.SetActive(true); //What is this
                     _audioSource.PlayOneShot(dialogueSound);
 
                 }
                 else if (OVRInput.Get(OVRInput.Button.Two)) //press B button
                 {
-                    Destroy(textBoxB);
+                    Destroy(textBoxB); //exit dialogue
                 }
+            }
             }
         }
     }
-}
+
