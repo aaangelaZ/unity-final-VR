@@ -25,9 +25,12 @@ public class RoomDoorOpen : MonoBehaviour
         {
             roomDoor.SetActive(false);
             ipadOS.SetActive(true);
-            Destroy(ipadOS, 3.5f);
+            
 
             _audioSource.PlayOneShot(doorOpenSound);
+            Destroy(doorOpenSound, 5f);
+            Destroy(ipadOS, 5f);
+            Destroy(roomDoor, 5f);
         }
 
     }

@@ -9,7 +9,7 @@ public class buyaotrigger : MonoBehaviour
     {
         if(other.gameObject.CompareTag("buyao"))
         {
-            SceneManager.LoadScene("StartScene");
+            SceneManager.LoadScene("Ending2");
         }
 
         // if(other.gameObject.tag.Equals("Bullet"))
