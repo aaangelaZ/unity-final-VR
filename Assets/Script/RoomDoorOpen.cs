@@ -14,7 +14,7 @@ public class RoomDoorOpen : MonoBehaviour
     void Start()
     {
         roomDoor.SetActive(true);
-        ipadOS.SetActive(false);
+        //ipadOS.SetActive(false);
 
         _audioSource = GetComponent<AudioSource>();
     }
