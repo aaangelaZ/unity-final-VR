@@ -14,8 +14,8 @@ public class fulutrigger : MonoBehaviour
         {
             Vector3 pos = new Vector3 (Random.Range(8.34f, 8.45f),Random.Range(1.32f,1.36f), Random.Range(4.11f, 5.11f));
                 
-            Instantiate(fuluPrefab, pos, Quaternion.identity);
-            // Instantiate(fuluPrefab, pos, Random.rotation);
+            // Instantiate(fuluPrefab, pos, Quaternion.identity);
+            Instantiate(fuluPrefab, pos, Random.rotation);
             yield return new WaitForSeconds(0.1f);
         }
     }
