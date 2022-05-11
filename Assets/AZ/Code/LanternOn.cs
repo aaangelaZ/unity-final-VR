@@ -12,13 +12,13 @@ public class LanternOn : MonoBehaviour
 
     //for canvas dialogue
     AudioSource _audioSource;
-    public AudioClip brideTalk;
-    public GameObject brideText;
+    //public AudioClip brideTalk;
+    //public GameObject brideText;
 
     private void Start()
     {
         _audioSource = GetComponent<AudioSource>();
-        brideText.SetActive(false);
+        //brideText.SetActive(false);
     }
 
     void OnTriggerEnter(Collider other)
@@ -30,10 +30,10 @@ public class LanternOn : MonoBehaviour
             Lanlight3.SetActive(true);
             Lanlight4.SetActive(true);
 
-            _audioSource.PlayOneShot(brideTalk);
-            brideText.SetActive(true);
-            Destroy(brideText, 5f);
-            Destroy(brideTalk, 5f);
+            //_audioSource.PlayOneShot(brideTalk);
+            //brideText.SetActive(true);
+            //Destroy(brideText, 5f);
+            //Destroy(brideTalk, 5f);
         }
     }
 }
