@@ -5,6 +5,7 @@ using UnityEngine;
 public class fulutrigger : MonoBehaviour
 {
     public GameObject fuluPrefab;
+    //public GameObject fuluClueCollider;
 
     IEnumerator papershow()
     {
@@ -25,14 +26,20 @@ public class fulutrigger : MonoBehaviour
     //     StartCoroutine(papershow());
     // }
 
+    //private void Start()
+    //{
+    //    fuluClueCollider.SetActive(false);
+    //}
+
     private void OnTriggerEnter(Collider other) 
     {
 
         if(other.gameObject.CompareTag("Player"))
         {   
             StartCoroutine(papershow());
-            // Destroy(gameObject);
-        }
+            //fuluClueCollider.SetActive(true);
+    // Destroy(gameObject);
+}
 
     }
     
