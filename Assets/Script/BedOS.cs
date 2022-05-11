@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class BedOS : MonoBehaviour
 {
@@ -35,7 +36,7 @@ public class BedOS : MonoBehaviour
 
             _audioSource.PlayOneShot(dialogueSound);
 
-            Destroy(bedOS, 5f);
+            
         }
 
     }
@@ -44,9 +45,13 @@ public class BedOS : MonoBehaviour
     {
         if (other.tag == "Player")
         {
-            bedOS.SetActive(false);
-            brideCopy.SetActive(false);
-            spotLight.SetActive(false);
+            //bedOS.SetActive(false);
+            //brideCopy.SetActive(false);
+            //spotLight.SetActive(false);
+            Destroy(bedOS);
+            Destroy(brideCopy);
+            Destroy(spotLight);
+
             brideOriginal.SetActive(true);
         }
 
