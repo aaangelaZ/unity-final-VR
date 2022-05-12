@@ -36,6 +36,7 @@ public class BookInfo : MonoBehaviour
 
             if (OVRInput.Get(OVRInput.Button.Three)) //press X button 
             {
+                openBook = false;
                 bookInfo.SetActive(false);
             }
 }
