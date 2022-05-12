@@ -31,7 +31,7 @@ public class RoomDoorOpen : MonoBehaviour
 
             _audioSource.PlayOneShot(doorOpenSound);
             Destroy(doorOpenSound, 5f);
-            Destroy(ipadOS, 5f);
+            Destroy(ipadOS, 8f);
             Destroy(roomDoor, 5f);
             Destroy(fuluClueCollider);
         }
