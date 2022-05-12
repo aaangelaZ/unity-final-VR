@@ -7,11 +7,13 @@ public class BookInfo : MonoBehaviour
 {
     public GameObject bookInfo;
     public bool openBook;
+    public GameObject lookText;
 
     void Start()
     {
         bookInfo.SetActive(false);
         openBook = false;
+        lookText.SetActive(true);
     }
 
     void OnTriggerEnter(Collider other)
@@ -21,7 +23,8 @@ public class BookInfo : MonoBehaviour
         {
             //bookInfo.SetActive(true);
             openBook = true;
-            
+            lookText.SetActive(false);
+
             //Destroy(bookInfo, 10f);
         }
     }
