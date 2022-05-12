@@ -78,7 +78,7 @@ public class MarriageDialogue : MonoBehaviour
             choiceB = false;
 
 
-            if (OVRInput.Get(OVRInput.Button.One)) //press A button - who are you
+            if (OVRInput.Get(OVRInput.Button.Three)) //press X button - who are you
             {
                 textBoxA.SetActive(false);
                 choiceB = true;
@@ -86,7 +86,7 @@ public class MarriageDialogue : MonoBehaviour
 
             }
 
-            if (OVRInput.Get(OVRInput.Button.Two)) //press B button - Exit
+            if (OVRInput.Get(OVRInput.Button.Four)) //press Y button - Exit
             {
                 choiceA = false;
                 choiceB = false;
